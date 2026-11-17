@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Presentasi interaktif tentang website, hosting, domain, subdomain, dan MySQL.">
+  <title>Presentasi Website, Hosting, Domain & MySQL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <main class="deck">
+    <section class="slide active">
+      <div class="kicker">Presentasi Teknologi Web</div>
+      <h1>Mengenal <span class="gradient">Website</span>, Hosting, Domain, dan MySQL</h1>
+      <p class="lead">Dari membuat halaman web hingga mempublikasikannya agar dapat diakses secara online.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span><span>Hosting</span></div>
+      <footer><span>Materi presentasi</span><span>01</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">01 · Pengantar</div><h2>Apa itu <span class="accent">website</span>?</h2>
+      <p>Website adalah kumpulan halaman digital yang saling terhubung dan dapat dibuka melalui browser menggunakan alamat web. Website dapat berisi informasi, gambar, video, formulir, maupun fitur interaktif.</p>
+      <div class="grid">
+        <article class="card"><h3>Website statis</h3><p>Konten relatif tetap. Umumnya dibuat menggunakan HTML, CSS, dan JavaScript.</p></article>
+        <article class="card"><h3>Website dinamis</h3><p>Konten dapat berubah berdasarkan data atau aktivitas pengguna, biasanya melibatkan bahasa pemrograman sisi server dan database.</p></article>
+      </div><footer><span>Dasar-dasar website</span><span>02</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">02 · Teknologi dasar</div><h2>HTML, CSS, dan JavaScript</h2>
+      <div class="grid">
+        <article class="card"><h3 class="accent">HTML — struktur</h3><p>Menentukan susunan dan isi halaman, seperti judul, paragraf, gambar, tautan, dan formulir.</p></article>
+        <article class="card"><h3 class="accent">CSS — tampilan</h3><p>Mengatur warna, ukuran teks, jarak, tata letak, animasi, dan responsivitas halaman.</p></article>
+        <article class="card"><h3 class="accent">JavaScript — interaksi</h3><p>Membuat halaman merespons tindakan pengguna, misalnya tombol, validasi formulir, dan navigasi.</p></article>
+        <article class="card"><h3 class="accent">CDN — sumber pustaka</h3><p>Content Delivery Network dapat digunakan untuk memuat pustaka atau aset dari jaringan server, contohnya Bootstrap atau ikon.</p></article>
+      </div><footer><span>Teknologi pembuat web</span><span>03</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">03 · Alur publikasi</div><h2>Dari web lokal menjadi <span class="accent">online</span></h2>
+      <p>Website yang selesai dibuat di komputer perlu diunggah ke layanan hosting agar dapat diakses melalui internet.</p>
+      <div class="flow"><span>Buat website</span><b>→</b><span>Hosting</span><b>→</b><span>Domain</span><b>→</b><span>Online</span></div>
+      <article class="card"><h3>Gambaran proses</h3><p>Siapkan file website dan database, pilih layanan hosting, unggah file, hubungkan database jika diperlukan, atur domain atau subdomain, lalu uji website melalui browser.</p></article>
+      <footer><span>Alur kerja publikasi</span><span>04</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">04 · Hosting</div><h2>Apa itu <span class="accent">hosting</span>?</h2>
+      <p>Hosting adalah layanan penyimpanan dan penyediaan sumber daya server untuk menyimpan file website agar dapat diakses melalui internet.</p>
+      <div class="grid">
+        <article class="card"><h3>Fungsi hosting</h3><p>Menyimpan file website, menjalankan aplikasi web, dan menyediakan akses bagi pengunjung.</p></article>
+        <article class="card"><h3>Contoh isi hosting</h3><p>File HTML, CSS, JavaScript, PHP, gambar, serta file pendukung website.</p></article>
+      </div>
+      <p class="small">Analogi: hosting seperti tempat atau bangunan untuk menyimpan dan menjalankan website.</p>
+      <footer><span>Konsep hosting</span><span>05</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">05 · Alamat website</div><h2>Domain dan <span class="accent">subdomain</span></h2>
+      <div class="grid">
+        <article class="card"><h3>Domain</h3><p>Nama/alamat yang digunakan untuk mengakses website, misalnya <strong>contoh.com</strong>.</p></article>
+        <article class="card"><h3>Subdomain</h3><p>Bagian tambahan di depan domain utama, misalnya <strong>blog.contoh.com</strong> atau <strong>namasitus.infinityfreeapp.com</strong>.</p></article>
+      </div>
+      <article class="card"><h3>Perbedaannya</h3><p>Domain adalah alamat utama. Subdomain merupakan alamat turunan yang dapat diarahkan ke bagian atau website tertentu.</p></article>
+      <p class="small">Analogi: domain seperti alamat utama, sedangkan subdomain seperti bagian atau unit di dalam alamat tersebut.</p>
+      <footer><span>Alamat website</span><span>06</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">06 · Database</div><h2>Mengenal <span class="accent">MySQL</span></h2>
+      <p>MySQL adalah sistem manajemen basis data relasional (RDBMS) yang digunakan untuk menyimpan, mengatur, dan mengambil data menggunakan SQL.</p>
+      <div class="grid">
+        <article class="card"><h3>Contoh data</h3><p>Data akun pengguna, daftar barang, informasi produk, komentar, dan riwayat transaksi.</p></article>
+        <article class="card"><h3>Hubungan dengan website</h3><p>Aplikasi server dapat membaca atau menyimpan data ke MySQL berdasarkan permintaan dari website.</p></article>
+      </div>
+      <pre class="code">Contoh perintah SQL:
+SELECT * FROM pengguna;</pre>
+      <footer><span>Database website</span><span>07</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">07 · Publikasi</div><h2>Website <span class="accent">public</span></h2>
+      <p>Website public adalah website yang dipublikasikan sehingga dapat diakses oleh orang lain melalui jaringan internet, sesuai pengaturan aksesnya.</p>
+      <div class="grid">
+        <article class="card"><h3>HTML publik</h3><p>Halaman HTML dapat ditampilkan oleh browser setelah file tersedia di server web.</p></article>
+        <article class="card"><h3>Akses pengguna</h3><p>Pengunjung membuka alamat website melalui browser. Jika website memiliki login, akses fitur dapat dibatasi berdasarkan akun atau peran.</p></article>
+      </div>
+      <p class="small">Catatan: “public” berarti dapat diakses melalui internet, bukan berarti semua data dan halaman harus terbuka untuk umum.</p>
+      <footer><span>Website untuk publik</span><span>08</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">08 · Pilihan pengerjaan</div><h2>Website untuk <span class="accent">individu</span> atau satu kelas</h2>
+      <div class="grid">
+        <article class="card"><h3>Individu</h3><p>Dibuat dan dikelola oleh satu orang. Cocok untuk portofolio, profil, atau proyek pribadi.</p></article>
+        <article class="card"><h3>Satu kelas</h3><p>Dapat menjadi proyek bersama. Pembagian tugas dapat meliputi desain, frontend, backend, database, dan dokumentasi.</p></article>
+      </div>
+      <p>Kerja kelompok membutuhkan pembagian tanggung jawab, kesepakatan fitur, dan pengujian bersama.</p>
+      <footer><span>Skema pengerjaan</span><span>09</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">09 · Kesimpulan</div><h2>Ringkasan alur pembuatan web</h2>
+      <div class="flow"><span>HTML</span><b>+</b><span>CSS</span><b>+</b><span>JavaScript</span></div>
+      <div class="flow"><span>MySQL</span><b>→</b><span>Hosting</span><b>→</b><span>Domain/Subdomain</span></div>
+      <p class="lead">Website dibuat dengan teknologi web, dapat menggunakan database untuk mengelola data, lalu diunggah ke hosting dan diakses melalui domain atau subdomain.</p>
+      <p class="small">Terima kasih.</p>
+      <footer><span>Penutup</span><span>10</span></footer>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">10 · Tugas tambahan</div><h2>Pengertian dengan <span class="accent">bahasa daerah</span></h2>
+      <p>Sesuai catatan tugas, tuliskan pengertian istilah berikut secara manual menggunakan bahasa daerah masing-masing:</p>
+      <div class="grid">
+        <article class="card"><h3>Hosting</h3><p>Layanan tempat menyimpan file website agar bisa diakses melalui internet.</p></article>
+        <article class="card"><h3>Domain</h3><p>Nama atau alamat website yang digunakan pengunjung.</p></article>
+        <article class="card"><h3>Subdomain</h3><p>Alamat turunan dari domain utama.</p></article>
+        <article class="card"><h3>Catatan pengerjaan</h3><p>Bagian ini ditulis tangan menggunakan bahasa daerah masing-masing.</p></article>
+      </div><footer><span>Bagian tugas tulis tangan</span><span>11</span></footer>
+    </section>
+  </main>
+
+  <nav class="controls" aria-label="Navigasi presentasi">
+    <button id="prev" aria-label="Slide sebelumnya">←</button>
+    <span id="counter">1 / 11</span>
+    <button id="next" aria-label="Slide berikutnya">→</button>
+    <button id="full">Layar penuh</button>
+  </nav>
+  <script src="script.js"></script>
+</body>
+</html>
